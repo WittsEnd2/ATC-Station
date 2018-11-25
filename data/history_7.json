@@ -1,0 +1,18 @@
+{ "now" : 1543103744.7,
+  "messages" : 5535,
+  "aircraft" : [
+    {"hex":"aa44ad","lat":40.503342,"lon":-74.777222,"nucp":7,"seen_pos":3.4,"altitude":6075,"mlat":[],"tisb":[],"messages":4,"seen":2.8,"rssi":-36.5},
+    {"hex":"acb872","altitude":30000,"mlat":[],"tisb":[],"messages":6,"seen":4.3,"rssi":-34.0},
+    {"hex":"a3ff4e","squawk":"7073","flight":"RPA6119 ","lat":40.379288,"lon":-74.495544,"nucp":7,"seen_pos":15.8,"altitude":8050,"vert_rate":64,"track":4,"speed":306,"category":"A3","mlat":[],"tisb":[],"messages":81,"seen":3.8,"rssi":-31.7},
+    {"hex":"ab686f","squawk":"1465","lat":40.732956,"lon":-74.495972,"nucp":7,"seen_pos":46.0,"altitude":36000,"vert_rate":0,"track":232,"speed":344,"mlat":[],"tisb":[],"messages":61,"seen":0.7,"rssi":-34.1},
+    {"hex":"acc7ae","altitude":17000,"mlat":[],"tisb":[],"messages":7,"seen":1.8,"rssi":-35.7},
+    {"hex":"aa7e74","squawk":"7126","flight":"UAL1207 ","lat":40.565061,"lon":-74.709715,"nucp":7,"seen_pos":6.4,"altitude":16475,"vert_rate":2048,"track":235,"speed":354,"category":"A3","mlat":[],"tisb":[],"messages":101,"seen":4.3,"rssi":-32.9},
+    {"hex":"ac9ab2","squawk":"7107","altitude":8075,"mlat":[],"tisb":[],"messages":542,"seen":0.1,"rssi":-21.1},
+    {"hex":"a6c781","squawk":"1552","lat":40.194077,"lon":-74.610107,"nucp":7,"seen_pos":4.0,"altitude":18650,"vert_rate":1664,"track":265,"speed":381,"mlat":[],"tisb":[],"messages":109,"seen":2.4,"rssi":-32.6},
+    {"hex":"a1e67b","squawk":"3620","flight":"UAL950  ","lat":40.180847,"lon":-74.440369,"nucp":7,"seen_pos":8.5,"altitude":35975,"vert_rate":256,"track":75,"speed":544,"category":"A0","mlat":[],"tisb":[],"messages":214,"seen":7.0,"rssi":-33.2},
+    {"hex":"a85949","squawk":"3035","flight":"RPA3673 ","lat":40.395035,"lon":-74.673889,"nucp":7,"seen_pos":0.3,"altitude":6075,"vert_rate":64,"track":69,"speed":222,"category":"A3","mlat":[],"tisb":[],"messages":2193,"seen":0.0,"rssi":-20.8},
+    {"hex":"401000","mlat":[],"tisb":[],"messages":90,"seen":116.4,"rssi":-25.6},
+    {"hex":"a1ccec","altitude":9925,"mlat":[],"tisb":[],"messages":847,"seen":38.0,"rssi":-32.1},
+    {"hex":"a0acf9","squawk":"4156","altitude":6150,"mlat":[],"tisb":[],"messages":867,"seen":27.1,"rssi":-31.1}
+  ]
+}

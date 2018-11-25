@@ -1,0 +1,9 @@
+{ "now" : 1543103594.5,
+  "messages" : 662,
+  "aircraft" : [
+    {"hex":"a85949","squawk":"3035","lat":40.500074,"lon":-74.730065,"nucp":7,"seen_pos":7.4,"altitude":6075,"mlat":[],"tisb":[],"messages":43,"seen":0.4,"rssi":-32.7},
+    {"hex":"401000","squawk":"6075","lat":40.405015,"lon":-74.646232,"nucp":6,"seen_pos":25.3,"altitude":5075,"mlat":[],"tisb":[],"messages":74,"seen":3.4,"rssi":-22.5},
+    {"hex":"a1ccec","altitude":10075,"mlat":[],"tisb":[],"messages":308,"seen":0.0,"rssi":-28.5},
+    {"hex":"a0acf9","squawk":"4156","altitude":6150,"mlat":[],"tisb":[],"messages":193,"seen":0.2,"rssi":-28.7}
+  ]
+}

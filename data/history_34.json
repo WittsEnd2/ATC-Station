@@ -1,0 +1,18 @@
+{ "now" : 1543104555.7,
+  "messages" : 29818,
+  "aircraft" : [
+    {"hex":"a43ea6","altitude":5075,"vert_rate":-128,"track":147,"speed":198,"mlat":[],"tisb":[],"messages":12,"seen":0.0,"rssi":-33.1},
+    {"hex":"a56a56","altitude":28000,"mlat":[],"tisb":[],"messages":31,"seen":0.2,"rssi":-33.1},
+    {"hex":"aa4252","squawk":"1604","flight":"JBU2227 ","lat":40.395797,"lon":-74.897981,"nucp":7,"seen_pos":0.9,"altitude":26050,"vert_rate":1472,"track":232,"speed":350,"category":"A3","mlat":[],"tisb":[],"messages":1140,"seen":0.1,"rssi":-28.8},
+    {"hex":"aa9985","mlat":[],"tisb":[],"messages":82,"seen":111.1,"rssi":-33.5},
+    {"hex":"a6a00b","squawk":"7405","flight":"JBU1606 ","lat":40.415163,"lon":-74.539927,"nucp":7,"seen_pos":31.2,"altitude":5350,"vert_rate":-960,"track":70,"speed":224,"category":"A3","mlat":[],"tisb":[],"messages":2294,"seen":19.9,"rssi":-31.7},
+    {"hex":"ad5fef","mlat":[],"tisb":[],"messages":176,"seen":273.3,"rssi":-33.4},
+    {"hex":"abe872","mlat":[],"tisb":[],"messages":263,"seen":139.9,"rssi":-32.2},
+    {"hex":"a71337","mlat":[],"tisb":[],"messages":1011,"seen":165.9,"rssi":-33.7},
+    {"hex":"a36994","mlat":[],"tisb":[],"messages":1012,"seen":187.5,"rssi":-33.1},
+    {"hex":"a37335","mlat":[],"tisb":[],"messages":942,"seen":269.7,"rssi":-34.0},
+    {"hex":"4cc504","mlat":[],"tisb":[],"messages":2202,"seen":275.7,"rssi":-34.0},
+    {"hex":"aa6a98","mlat":[],"tisb":[],"messages":1448,"seen":206.8,"rssi":-34.6},
+    {"hex":"a0a91f","mlat":[],"tisb":[],"messages":2839,"seen":154.3,"rssi":-32.9}
+  ]
+}

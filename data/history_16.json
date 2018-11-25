@@ -1,0 +1,25 @@
+{ "now" : 1543104015.0,
+  "messages" : 15416,
+  "aircraft" : [
+    {"hex":"a05a90","lat":40.506080,"lon":-74.728754,"nucp":7,"seen_pos":0.8,"altitude":6075,"mlat":[],"tisb":[],"messages":7,"seen":0.0,"rssi":-32.0},
+    {"hex":"4cc504","lat":40.083944,"lon":-74.901602,"nucp":7,"seen_pos":8.5,"altitude":29200,"mlat":[],"tisb":[],"messages":8,"seen":7.4,"rssi":-33.5},
+    {"hex":"aa6a98","altitude":41000,"mlat":[],"tisb":[],"messages":11,"seen":14.0,"rssi":-33.7},
+    {"hex":"a88b23","altitude":3200,"mlat":[],"tisb":[],"messages":168,"seen":0.7,"rssi":-31.1},
+    {"hex":"a0a91f","squawk":"2173","flight":"UAL601  ","lat":40.413953,"lon":-74.733873,"nucp":7,"seen_pos":0.2,"altitude":7200,"vert_rate":-1024,"track":347,"speed":261,"category":"A4","mlat":[],"tisb":[],"messages":1295,"seen":0.0,"rssi":-28.4},
+    {"hex":"a0d6a8","mlat":[],"tisb":[],"messages":2,"seen":168.8,"rssi":-40.6},
+    {"hex":"a11fa1","squawk":"2054","flight":"UAL2117 ","lat":40.455850,"lon":-74.662711,"nucp":7,"seen_pos":0.0,"altitude":6075,"vert_rate":-64,"track":100,"speed":210,"category":"A4","mlat":[],"tisb":[],"messages":877,"seen":0.0,"rssi":-26.3},
+    {"hex":"a2dda1","squawk":"1133","altitude":23575,"mlat":[],"tisb":[],"messages":442,"seen":0.4,"rssi":-30.5},
+    {"hex":"ab585f","squawk":"6727","flight":"ENY3688 ","lat":40.393204,"lon":-74.441895,"nucp":7,"seen_pos":4.5,"altitude":9050,"vert_rate":-384,"track":70,"speed":265,"category":"A2","mlat":[],"tisb":[],"messages":1246,"seen":0.1,"rssi":-32.0},
+    {"hex":"aa44ad","squawk":"7162","lat":40.405746,"lon":-74.545593,"nucp":7,"seen_pos":6.6,"altitude":5075,"vert_rate":128,"track":101,"speed":207,"mlat":[],"tisb":[],"messages":1981,"seen":4.5,"rssi":-33.1},
+    {"hex":"acb872","mlat":[],"tisb":[],"messages":22,"seen":251.1,"rssi":-30.5},
+    {"hex":"a3ff4e","mlat":[],"tisb":[],"messages":86,"seen":242.9,"rssi":-32.5},
+    {"hex":"ab686f","squawk":"1465","lat":40.410275,"lon":-74.986121,"nucp":7,"seen_pos":6.2,"altitude":37650,"vert_rate":704,"track":228,"speed":353,"mlat":[],"tisb":[],"messages":810,"seen":5.6,"rssi":-32.7},
+    {"hex":"acc7ae","mlat":[],"tisb":[],"messages":14,"seen":179.7,"rssi":-34.0},
+    {"hex":"aa7e74","mlat":[],"tisb":[],"messages":494,"seen":128.7,"rssi":-33.4},
+    {"hex":"ac9ab2","mlat":[],"tisb":[],"messages":1538,"seen":86.3,"rssi":-30.3},
+    {"hex":"a6c781","mlat":[],"tisb":[],"messages":601,"seen":146.4,"rssi":-33.7},
+    {"hex":"a1e67b","mlat":[],"tisb":[],"messages":217,"seen":264.9,"rssi":-33.8},
+    {"hex":"a85949","mlat":[],"tisb":[],"messages":2837,"seen":161.7,"rssi":-34.0},
+    {"hex":"a0acf9","mlat":[],"tisb":[],"messages":872,"seen":241.4,"rssi":-33.1}
+  ]
+}

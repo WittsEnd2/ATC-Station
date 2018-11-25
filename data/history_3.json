@@ -1,0 +1,10 @@
+{ "now" : 1543103624.5,
+  "messages" : 1307,
+  "aircraft" : [
+    {"hex":"a1e67b","flight":"UAL950  ","altitude":34975,"category":"A0","mlat":[],"tisb":[],"messages":35,"seen":2.5,"rssi":-34.2},
+    {"hex":"a85949","squawk":"3035","flight":"RPA3673 ","lat":40.465533,"lon":-74.730128,"nucp":7,"seen_pos":0.0,"altitude":6075,"vert_rate":-64,"track":181,"speed":198,"category":"A3","mlat":[],"tisb":[],"messages":216,"seen":0.0,"rssi":-28.7},
+    {"hex":"401000","squawk":"6075","lat":40.405015,"lon":-74.646232,"nucp":6,"seen_pos":55.3,"altitude":5075,"mlat":[],"tisb":[],"messages":87,"seen":2.8,"rssi":-23.2},
+    {"hex":"a1ccec","squawk":"6011","altitude":10075,"mlat":[],"tisb":[],"messages":545,"seen":0.3,"rssi":-27.8},
+    {"hex":"a0acf9","squawk":"4156","altitude":6150,"mlat":[],"tisb":[],"messages":343,"seen":0.0,"rssi":-27.9}
+  ]
+}
