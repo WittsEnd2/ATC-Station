@@ -16,9 +16,10 @@ def update_json():
             f = open(DATAFOLDER + "" + name, "r")
             x = f.read()
             f.close()
+            y = json.loads(x)
+            if y not in data:
+                data.append(y)
 
-            if x not in data:
-                data.append(json.loads(x))
     threading.Timer(10, update_json).start()
 
 
