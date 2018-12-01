@@ -38,7 +38,7 @@ def getSentiment(tweet):
 
 class listener(StreamListener):
 	def __init__(self):
-		super().__init__()
+		# super().__init__()
 		self.counter = 0 
 	# def on_status(self, status):
 	# 	print(status)

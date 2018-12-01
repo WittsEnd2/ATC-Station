@@ -115,7 +115,7 @@ def update_json():
             if y not in data:
                 # 1. Get flight name
                 if y.has_key("flights"):
-                    getTweets.append(y["flights"]) 
+                    getTweets.foundFlights.append(y["flights"]) 
                     getTweets.myStream.disconnect()
                     getTweets.myStream.filter(languages=["en"], track=getTweets.foundFlights, async=True)
                     data.append(y)
@@ -141,6 +141,7 @@ def get_flights():
 @app.route("/api/get_tweets")
 def get_tweets():
     getTweets.foundFlights.append("Mark Zuckerberg") 
+    # add flight id as key to getTweets.tweets
     return json.dumps(getTweets.tweets)
 
 
