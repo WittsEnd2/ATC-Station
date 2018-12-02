@@ -17,7 +17,7 @@ access_token = "839692039-VulkCGE4QZRZlKYQtDuNjRWgJnxsCdeSfqaPuObs"
 access_token_secret = "08AltS6hMTj5Y7sDh2cSLZCrtuqfEYQJ5LTqEI2N4FLN0"
 
 tweets = []
-foundFlights = ["Microsoft", "Google"]
+foundFlights = []
 def getSentiment(tweet):
     sid = SentimentIntensityAnalyzer()
     sent = 0.0
