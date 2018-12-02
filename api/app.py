@@ -141,7 +141,7 @@ def get_flights():
 
 @app.route("/api/get_tweets")
 def get_tweets():
-    getTweets.foundFlights.append("Mark Zuckerberg") 
+    # getTweets.foundFlights.append("Mark Zuckerberg") 
     # add flight id as key to getTweets.tweets
     return json.dumps(getTweets.tweets)
 
