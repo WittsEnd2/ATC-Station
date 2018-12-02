@@ -114,11 +114,13 @@ def update_json():
             y = json.loads(x)
             if y not in data:
                 # 1. Get flight name
+                data.append(y)
+
                 if y.has_key("flights"):
                     getTweets.foundFlights.append(y["flights"]) 
-                    getTweets.myStream.disconnect()
+                    if getTweets.myStream.running is True:
+                        getTweets.myStream.disconnect()
                     getTweets.myStream.filter(languages=["en"], track=getTweets.foundFlights, async=True)
-                    data.append(y)
 
                 # 2. Lookup keywords to get from Twitter
                 # 3. Create a new Tweet stream with a filter for those tweet keywords
@@ -127,7 +129,6 @@ def update_json():
                 # 6. Serve json dumps
 
     threading.Timer(10, update_json).start()
-
 
 @app.route("/")
 def index():
