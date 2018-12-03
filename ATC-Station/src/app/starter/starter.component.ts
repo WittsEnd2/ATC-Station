@@ -19,7 +19,8 @@ export class StarterComponent implements OnInit, OnDestroy {
     // add the the body classes
     this.body.classList.add('skin-black');
     this.body.classList.add('sidebar-mini');
-    this.getFlightData()
+    this.getFlightData();
+
   }
 
   ngOnDestroy() {
@@ -28,9 +29,24 @@ export class StarterComponent implements OnInit, OnDestroy {
     this.body.classList.remove('sidebar-mini');
   }
   getFlightData(){ 
-    this.http.get("https://localhost:5000/api/get_flights").subscribe(data => {
+    this.http.get("http://localhost:1337/api/get_flights").subscribe(data => {
+      
       this.flightData = data;
-      console.log(data);
+      console.log(this.flightData);
+      let foundFlights = []; 
+      for (let i = 0; i < this.flightData.length; i++) {
+        let currAircraft = this.flightData[i]['aircraft'];
+        if (currAircraft !== undefined && currAircraft.length !== 0) {
+          for (let j = 0; j < currAircraft.length; j++) {
+            if (currAircraft[j]['flight'] !== undefined && currAircraft[j]['flight'] !== "") {
+              foundFlights.push(currAircraft[j]['flight']);
+            }
+          }
+        }
+      }
+      console.log(foundFlights);
+      // document.getElementById("weather").innerText = this.flightData;
+      // console.log(data);
     })
   }
 
