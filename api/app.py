@@ -120,6 +120,7 @@ def update_json():
                     getTweets.foundFlights.append(y["flights"]) 
                     if getTweets.myStream.running is True:
                         getTweets.myStream.disconnect()
+
                     getTweets.myStream.filter(languages=["en"], track=getTweets.foundFlights, async=True)
 
                 # 2. Lookup keywords to get from Twitter
@@ -141,9 +142,12 @@ def get_flights():
 
 @app.route("/api/get_tweets")
 def get_tweets():
-    # getTweets.foundFlights.append("Mark Zuckerberg") 
     # add flight id as key to getTweets.tweets
     return json.dumps(getTweets.tweets)
+
+@app.route("/api/test")
+def test():
+    return str(getTweets.foundFlights)
 
 
 if __name__ == "__main__":
