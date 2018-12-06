@@ -71,7 +71,7 @@ export class StarterComponent implements OnInit, OnDestroy {
       }
       console.log("URL: " + this.url);
 
-      document.getElementById("tweets").innerHTML = '<iframe src="https://www.csc2.ncsu.edu/faculty/healey/tweet_viz/tweet_app/?q=JetBlue OR ' + this.url + '" width="100%" height="500px;" id ="myiframe" ></iframe>';
+      document.getElementById("tweets").innerHTML = '<iframe src="https://www.csc2.ncsu.edu/faculty/healey/tweet_viz/tweet_app/?q=' + this.url + '" width="100%" height="500px;" id ="myiframe" ></iframe>';
 
 
       // this.setTweets();
