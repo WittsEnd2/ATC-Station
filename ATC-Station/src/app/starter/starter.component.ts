@@ -1,5 +1,6 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs/Rx';
 import 'rxjs/add/observable/interval';
 
 @Component({
@@ -14,13 +15,14 @@ export class StarterComponent implements OnInit, OnDestroy {
   body: HTMLBodyElement = document.getElementsByTagName('body')[0];
 
   constructor(private http: HttpClient) { }
-  private url: string;
+  private url: string = "";
 
   ngOnInit() {
     // add the the body classes
     this.body.classList.add('skin-black');
     this.body.classList.add('sidebar-mini');
     this.getFlightData();
+    Observable.interval(20000).subscribe(x => this.getFlightData());
     document.getElementById("tweets").innerHTML = '<iframe src="https://www.csc2.ncsu.edu/faculty/healey/tweet_viz/tweet_app/?q=' + 'American Airlines OR United Airlines' + '" width="100%" height="500px;" id ="myiframe" ></iframe>';
 
 
@@ -40,7 +42,6 @@ export class StarterComponent implements OnInit, OnDestroy {
 
   getFlightData() {
     this.http.get("http://localhost:1337/api/get_flights").subscribe(data => {
-
       this.flightData = data;
       var airlines = []
       //console.log(this.flightData);
@@ -65,8 +66,15 @@ export class StarterComponent implements OnInit, OnDestroy {
               })
             }
           }
+
         }
       }
+      console.log("URL: " + this.url);
+
+      document.getElementById("tweets").innerHTML = '<iframe src="https://www.csc2.ncsu.edu/faculty/healey/tweet_viz/tweet_app/?q=' + this.url + '" width="100%" height="500px;" id ="myiframe" ></iframe>';
+
+
+      // this.setTweets();
 
       /*
       var url = "";
