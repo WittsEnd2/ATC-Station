@@ -48,7 +48,7 @@
         </div>
 
         <!-- Weather -->
-        <div class="box" id="weather">
+        <div class="box">
           <div class="box-header with-border">
             <h3 class="box-title">Weather</h3>
             <div class="box-tools pull-right">
@@ -56,10 +56,7 @@
             <!-- /.box-tools -->
           </div>
           <div class="box-body" id="weather">
-          <script>
-            // what am i doing wrong here
-            $('#weather').load('http://www.intellicast.com/National/Radar/Current.aspx?animate=true #ctl00_ctl00_master_body_map_basemap');
-          </script>
+            <iframe width = "100%" height = "100%" src = "http://www.intellicast.com/National/Radar/Current.aspx?animate=true #ctl00_ctl00_master_body_map_basemap"></iframe>
           </div>  
         </div>
       </section>
@@ -76,7 +73,7 @@
             <!-- /.box-tools -->
           </div>
           <div class="box-body" id="tweets">
-            
+
           </div>
         </div>
 
