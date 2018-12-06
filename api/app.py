@@ -4,7 +4,6 @@ import os
 import time, threading
 import unicodedata
 import datetime
-import getTweets
 import requests
 from bs4 import BeautifulSoup
 
