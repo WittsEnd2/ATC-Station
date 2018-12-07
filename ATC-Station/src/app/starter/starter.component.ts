@@ -22,7 +22,7 @@ export class StarterComponent implements OnInit, OnDestroy {
     this.body.classList.add('skin-black');
     this.body.classList.add('sidebar-mini');
     this.getFlightData();
-    Observable.interval(20000).subscribe(x => this.getFlightData());
+    Observable.interval(30000).subscribe(x => this.getFlightData());
     document.getElementById("tweets").innerHTML = '<iframe src="https://www.csc2.ncsu.edu/faculty/healey/tweet_viz/tweet_app/?q=' + 'American Airlines OR United Airlines' + '" width="100%" height="500px;" id ="myiframe" ></iframe>';
 
 
@@ -55,12 +55,19 @@ export class StarterComponent implements OnInit, OnDestroy {
               this.http.get("http://localhost:1337/api/airline/" + currAircraft[j]['flight'].substring(0, 3)).subscribe(data2 => {
                 if (data2['name'].length > 0) {
                   // console.log("Found airline: " + data2['name'] + " with code: " + currAircraft[j]['flight']);
-                  if (!airlines.includes(data2['name'])) {
+                  if (!airlines.includes(data2['name']) && (data2['name'] !== undefined || data2['name'] !== null)) {
                     airlines.push(data2['name']);
-                    for (let i = 0; i < airlines.length; i++) {
-                      this.url += airlines[i] + " OR ";
+                    for (let i = 0; i < 5; i++) {
+                      if (airlines[i] !== undefined && airlines[i] !== null && !this.url.includes(airlines[i])) {
+                        if (i == 5) {
+                          this.url += airlines[i];
+                        } else {
+                          this.url += airlines[i] + " OR ";
+                        }
+                      }
                     }
 
+                    console.log("URL: https://www.csc2.ncsu.edu/faculty/healey/tweet_viz/tweet_app/?q=" + encodeURI(this.url));
                   }
                 }
               })
@@ -69,9 +76,11 @@ export class StarterComponent implements OnInit, OnDestroy {
 
         }
       }
-      console.log("URL: " + this.url);
 
-      document.getElementById("tweets").innerHTML = '<iframe src="https://www.csc2.ncsu.edu/faculty/healey/tweet_viz/tweet_app/?q=' + this.url + '" width="100%" height="500px;" id ="myiframe" ></iframe>';
+
+
+
+      document.getElementById("tweets").innerHTML = '<iframe src="https://www.csc2.ncsu.edu/faculty/healey/tweet_viz/tweet_app/?q=' + encodeURI(this.url) + '" width="100%" height="500px;" id ="myiframe" ></iframe>';
 
 
       // this.setTweets();
