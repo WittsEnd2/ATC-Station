@@ -1,4 +1,4 @@
-# ATC-Station
+# ATC-Station - Kyle Liu, Michael Reinigher, Michael Wittner
 
 ## About
 ATC-Station uses ADS-B data (retreived from an SDR) to provide data about flgihts and airlines. It uses dump1090 to get the flight data, and then creates uses the data to perform sentiment analysis, display a map of where flights are located, weather, and get the ATC radio for the flight. 
